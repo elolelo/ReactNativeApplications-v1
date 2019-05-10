@@ -5,7 +5,7 @@ import Forecast from './Forecast';
 class WeatherProject extends Component {
   constructor(props) {
     super(props);
-    this.state = { zip: "", forecast: null }
+    this.state = { zip: " ", forecast: null }
    }
 
    _handleTextChange = event => {
@@ -27,7 +27,7 @@ class WeatherProject extends Component {
     return (
       <View style={styles.container}>
           <Text style={styles.welcome}>
-              You input {this.state.zip}.
+              Your input {this.state.zip}
           </Text>
           {content}
           <TextInput style={styles.input}  onSubmitEditing={this._handleTextChange}/>
