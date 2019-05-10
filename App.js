@@ -13,12 +13,23 @@ class WeatherProject extends Component {
     };
 
   render() {
+    let content = null;
+    if (this.state.forecast !== null) {
+      content = (
+        <Forecast
+          main={this.state.forecast.main}
+          description={this.state.forecast.description}
+          temp={this.state.forecast.temp}
+        />
+      );
+ }
+
     return (
       <View style={styles.container}>
           <Text>
               You input {this.state.zip}.
           </Text>
-
+          {content}
           <TextInput style={styles.input}  onSubmitEditing={this._handleTextChange}/>
       </View>
     );
@@ -34,7 +45,10 @@ const styles = StyleSheet.create({
   input: {
     fontSize: 20,
     borderWidth: 2,
-    height: 40
+    padding: 2,
+    height: 40,
+    width: 100,
+    textAlign: "center"
     }
 });
 
