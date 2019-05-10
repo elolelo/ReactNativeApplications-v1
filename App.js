@@ -4,9 +4,9 @@ import { StyleSheet, Text, View, TextInput} from 'react-native';
 class WeatherProject extends Component {
   constructor(props) {
     super(props);
-    this.state = { zip: "" };
+    this.state = { zip: "", forecast: null }
    }
-   
+
    _handleTextChange = event => {
     this.setState({ zip: event.nativeEvent.text });
     };
