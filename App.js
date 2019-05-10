@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, TextInput} from 'react-native';
+import Forecast from './Forecast';
 
 class WeatherProject extends Component {
   constructor(props) {
