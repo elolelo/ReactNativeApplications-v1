@@ -26,7 +26,7 @@ class WeatherProject extends Component {
 
     return (
       <View style={styles.container}>
-          <Text>
+          <Text style={styles.welcome}>
               You input {this.state.zip}.
           </Text>
           {content}
@@ -42,6 +42,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#C0C0C0',
   },
+  welcome: {
+     fontSize: 20, 
+     textAlign: "center", 
+     margin: 10 
+    },
   input: {
     fontSize: 20,
     borderWidth: 2,
