@@ -3,6 +3,11 @@ import { StyleSheet, Text, View} from 'react-native';
 import WeatherProject from "./WeatherProject";
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { zip: "" };
+   }
+   
   render() {
     return (
       <View style={styles.container}>
