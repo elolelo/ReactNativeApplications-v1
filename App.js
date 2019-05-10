@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View} from 'react-native';
-import WeatherProject from "./WeatherProject";
 
 class WeatherProject extends Component {
   constructor(props) {
@@ -18,13 +17,12 @@ class WeatherProject extends Component {
     );
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'C0C0C0',
   }
 });
 
