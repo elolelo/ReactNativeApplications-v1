@@ -6,6 +6,10 @@ class WeatherProject extends Component {
     super(props);
     this.state = { zip: "" };
    }
+   
+   _handleTextChange = event => {
+    this.setState({ zip: event.nativeEvent.text });
+    };
 
   render() {
     return (
