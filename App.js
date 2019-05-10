@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View} from 'react-native';
+import { StyleSheet, Text, View, TextInput} from 'react-native';
 
 class WeatherProject extends Component {
   constructor(props) {
