@@ -10,9 +10,11 @@ class WeatherProject extends Component {
   render() {
     return (
       <View style={styles.container}>
-          <Text style={styles.welcome}>
+          <Text>
               You input {this.state.zip}.
           </Text>
+
+          <TextInput style={styles.input}  onSubmitEditing={this._handleTextChange}/>
       </View>
     );
   }
@@ -22,8 +24,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'C0C0C0',
-  }
+    backgroundColor: '#C0C0C0',
+  },
+  input: {
+    fontSize: 20,
+    borderWidth: 2,
+    height: 40
+    }
 });
 
 export default WeatherProject;
