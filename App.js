@@ -10,8 +10,12 @@ class WeatherProject extends Component {
    }
 
    _handleTextChange = event => {
-    this.setState({ zip: event.nativeEvent.text });
-    };
+    let zip = event.nativeEvent.text;
+    OpenWeatherMap.fetchForecast(zip).then(forecast => {
+    console.log(forecast);
+    this.setState({ forecast: forecast });
+    });
+   };
 
   render() {
     let content = null;
