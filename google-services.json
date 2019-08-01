@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "436686873976",
+    "firebase_url": "https://thanks-9d5dd.firebaseio.com",
+    "project_id": "thanks-9d5dd",
+    "storage_bucket": "thanks-9d5dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436686873976:android:b89177d77dfd4f21",
+        "android_client_info": {
+          "package_name": "com.nompumelelo.thanks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436686873976-los9vdth3bkoon72e8o39v0595gse4qn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDojpzEqLSVfcUCNMV3ROLycn3WZhY4ejs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436686873976-los9vdth3bkoon72e8o39v0595gse4qn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
